@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events & Activities | Lilian Ogechi Missionary Foundation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("images/events-hero.jpg") center/cover no-repeat;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .event-card img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+      .event-meta {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+      footer {
+        background: #212529;
+        color: #ccc;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+      footer a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Logo */
+      .logo {
+        max-height: 50px; /* controls height */
+        width: auto; /* keeps aspect ratio */
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          max-height: 40px; /* smaller logo for tablets */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .logo {
+          max-height: 30px; /* smaller logo for mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="Foundation Logo"
+            class="logo img-fluid me-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Upcoming Events & Activities</h1>
+        <p class="lead">
+          Join us in making a difference through our projects, missions, and
+          community outreach.
+        </p>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Upcoming Activities</h2>
+          <p class="text-muted">
+            Stay updated with our latest missions, projects, and volunteer
+            opportunities.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Event Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm event-card h-100">
+              <img src="images/event1.jpg" class="card-img-top" alt="Event 1" />
+              <div class="card-body">
+                <h5 class="card-title">Medical Outreach in Enugu</h5>
+                <p class="event-meta">
+                  <i class="bi bi-calendar-event"></i> October 15, 2025 | Enugu,
+                  Nigeria
+                </p>
+                <p class="card-text">
+                  A one-day free medical outreach providing check-ups,
+                  medicines, and health education to underserved communities in
+                  Enugu.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm event-card h-100">
+              <img src="images/event2.jpg" class="card-img-top" alt="Event 2" />
+              <div class="card-body">
+                <h5 class="card-title">Youth Empowerment Workshop</h5>
+                <p class="event-meta">
+                  <i class="bi bi-calendar-event"></i> November 5, 2025 | Lagos,
+                  Nigeria
+                </p>
+                <p class="card-text">
+                  A workshop focused on equipping youths with skills in
+                  leadership, digital literacy, and entrepreneurship for a
+                  brighter future.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm event-card h-100">
+              <img src="images/event3.jpg" class="card-img-top" alt="Event 3" />
+              <div class="card-body">
+                <h5 class="card-title">Christmas Food Drive</h5>
+                <p class="event-meta">
+                  <i class="bi bi-calendar-event"></i> December 20, 2025 |
+                  Abuja, Nigeria
+                </p>
+                <p class="card-text">
+                  Join us as we distribute food packs and essential supplies to
+                  families in need during the festive season.
+                </p>
+                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+          <h4>Want to get involved?</h4>
+          <p>
+            Sign up as a volunteer or support us with donations to make these
+            events a success.
+          </p>
+          <a href="donate.html" class="btn btn-success me-2">Donate Now</a>
+          <a href="contact.html" class="btn btn-outline-primary">Volunteer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>
+          &copy; 2025 Lilian Ogechi Missionary Foundation. All Rights Reserved.
+        </p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap + Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>

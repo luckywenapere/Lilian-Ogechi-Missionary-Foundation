@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Programs | Lilian Ogechi Missionary Foundation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("images/programs-hero.jpg") center/cover no-repeat;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .program-card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .program-card:hover {
+        transform: translateY(-5px);
+      }
+      .program-card img {
+        height: 220px;
+        object-fit: cover;
+      }
+      .program-card .card-body {
+        padding: 20px;
+      }
+      .impact {
+        background: #f8f9fa;
+        padding: 60px 0;
+      }
+      .impact .stat {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #0d6efd;
+      }
+      .cta {
+        background: #0d6efd;
+        color: #fff;
+        padding: 60px 0;
+        text-align: center;
+      }
+      .cta h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      footer {
+        background: #212529;
+        color: #ccc;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+      footer a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Logo */
+      .logo {
+        max-height: 50px; /* controls height */
+        width: auto; /* keeps aspect ratio */
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          max-height: 40px; /* smaller logo for tablets */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .logo {
+          max-height: 30px; /* smaller logo for mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="Foundation Logo"
+            class="logo img-fluid me-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Our Programs</h1>
+        <p class="lead">
+          Empowering communities and building a brighter future through
+          impactful initiatives.
+        </p>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What We Do</h2>
+          <p class="text-muted">
+            Explore our key programs and initiatives designed to improve lives
+            and foster sustainable change.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Program 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program1.jpg"
+                class="card-img-top"
+                alt="Community Outreach"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Community Outreach</h5>
+                <p class="card-text">
+                  We run outreach programs to provide essential support,
+                  education, and resources to underserved communities in
+                  Nigeria.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Program 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program2.jpg"
+                class="card-img-top"
+                alt="Youth Empowerment"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Youth Empowerment</h5>
+                <p class="card-text">
+                  Our youth initiatives focus on leadership, mentorship, and
+                  skill development to prepare the next generation for success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Program 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program3.jpg"
+                class="card-img-top"
+                alt="Health & Wellness"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Health & Wellness</h5>
+                <p class="card-text">
+                  We promote access to healthcare services, health education,
+                  and wellness programs for families and vulnerable groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Program 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program4.jpg"
+                class="card-img-top"
+                alt="Education Support"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Education Support</h5>
+                <p class="card-text">
+                  We provide scholarships, school supplies, and mentorship to
+                  ensure children have the opportunity to succeed academically.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Program 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program5.jpg"
+                class="card-img-top"
+                alt="Women Empowerment"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Women Empowerment</h5>
+                <p class="card-text">
+                  We create programs that equip women with resources, training,
+                  and support to improve their livelihoods and independence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Program 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card program-card h-100">
+              <img
+                src="images/program6.jpg"
+                class="card-img-top"
+                alt="Emergency Relief"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emergency Relief</h5>
+                <p class="card-text">
+                  During crises, we mobilize resources to provide immediate
+                  relief such as food, shelter, and essential supplies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="impact text-center">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="stat">10,000+</div>
+            <p>Lives Impacted</p>
+          </div>
+          <div class="col-md-4">
+            <div class="stat">500+</div>
+            <p>Volunteers Engaged</p>
+          </div>
+          <div class="col-md-4">
+            <div class="stat">50+</div>
+            <p>Communities Reached</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <h2>Be Part of the Change</h2>
+        <p class="mb-4">
+          Your support helps us expand our programs and reach more lives in
+          need. Together, we can build a brighter future.
+        </p>
+        <a href="donate.html" class="btn btn-light btn-lg">Donate Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>
+          &copy; 2025 Lilian Ogechi Missionary Foundation. All Rights Reserved.
+        </p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

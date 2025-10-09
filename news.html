@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>News & Updates | Lilian Ogechi Missionary Foundation</title>
+    <meta
+      name="description"
+      content="Latest news, stories, and updates from Lilian Ogechi Missionary Foundation — learn about our projects, events, and impact across Nigeria."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* --- Page-level styles (keeps look consistent with other pages) --- */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+      }
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url("images/news-hero.jpg") center/cover no-repeat;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .card-excerpt {
+        color: #495057;
+      }
+      .meta {
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+      .category-badge {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.6rem;
+        border-radius: 0.375rem;
+      }
+      .sidebar .card {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      footer {
+        background: #212529;
+        color: #ccc;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      /* focus visibility for accessibility */
+      a:focus,
+      button:focus,
+      input:focus,
+      textarea:focus {
+        outline: 3px solid rgba(13, 110, 253, 0.25);
+        outline-offset: 2px;
+      }
+
+      /* Responsive Logo */
+      .logo {
+        max-height: 50px; /* controls height */
+        width: auto; /* keeps aspect ratio */
+      }
+
+      @media (max-width: 768px) {
+        .logo {
+          max-height: 40px; /* smaller logo for tablets */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .logo {
+          max-height: 30px; /* smaller logo for mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (reuse same nav as other pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="Foundation Logo"
+            class="logo img-fluid me-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" role="banner" aria-label="News hero">
+      <div class="container">
+        <h1 class="display-5 fw-bold">News & Updates</h1>
+        <p class="lead">
+          Stories from the field, project updates, and announcements — stay
+          informed about our work across Nigeria.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="py-5" role="main">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Blog list (main column) -->
+          <section class="col-lg-8" aria-labelledby="news-heading">
+            <h2 id="news-heading" class="mb-4">Latest Articles</h2>
+
+            <!-- Article card 1 (featured) -->
+            <article class="card mb-4">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-5">
+                  <img
+                    src="images/news1.jpg"
+                    class="card-img-top rounded-start"
+                    alt="Volunteer team at health outreach"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <span class="badge bg-primary category-badge"
+                        >Health</span
+                      >
+                      <time class="meta" datetime="2025-10-15"
+                        >Oct 15, 2025</time
+                      >
+                    </div>
+                    <h3 class="h5 mt-2">
+                      Successful Medical Outreach in Enugu
+                    </h3>
+                    <p class="card-excerpt mb-2">
+                      Our medical outreach provided free consultations,
+                      medicines and health education to over 400 people in
+                      Enugu. Volunteers and partner clinics made this possible.
+                    </p>
+                    <div class="d-flex gap-2">
+                      <button
+                        class="btn btn-sm btn-outline-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#postModal1"
+                        aria-controls="postModal1"
+                      >
+                        Read More
+                      </button>
+                      <a href="donate.html" class="btn btn-sm btn-primary"
+                        >Support Similar Work</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article card 2 -->
+            <article class="card mb-4">
+              <img
+                src="images/news2.jpg"
+                class="card-img-top"
+                alt="Youth workshop"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <span class="badge bg-success category-badge">Youth</span>
+                  <time class="meta" datetime="2025-11-05">Nov 5, 2025</time>
+                </div>
+                <h3 class="h5 mt-2">
+                  Youth Empowerment Workshop: Digital Skills for Success
+                </h3>
+                <p class="card-excerpt">
+                  A hands-on workshop teaching digital literacy and
+                  entrepreneurship to 120 young people in Lagos — paving the way
+                  to new opportunities.
+                </p>
+                <div class="d-flex gap-2">
+                  <button
+                    class="btn btn-sm btn-outline-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#postModal2"
+                    aria-controls="postModal2"
+                  >
+                    Read More
+                  </button>
+                  <a class="btn btn-sm btn-outline-secondary" href="events.html"
+                    >See Related Events</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Article card 3 -->
+            <article class="card mb-4">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/news3.jpg"
+                    class="card-img-top rounded-start"
+                    alt="Christmas Food Drive"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <span class="badge bg-warning text-dark category-badge"
+                        >Relief</span
+                      >
+                      <time class="meta" datetime="2025-12-20"
+                        >Dec 20, 2025</time
+                      >
+                    </div>
+                    <h3 class="h5 mt-2">
+                      Join Our Annual Christmas Food Drive
+                    </h3>
+                    <p class="card-excerpt">
+                      We are preparing food packs for families in Abuja. Learn
+                      how you can volunteer or donate to make the season
+                      brighter for those in need.
+                    </p>
+                    <div class="d-flex gap-2">
+                      <button
+                        class="btn btn-sm btn-outline-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#postModal3"
+                        aria-controls="postModal3"
+                      >
+                        Read More
+                      </button>
+                      <a class="btn btn-sm btn-primary" href="donate.html"
+                        >Donate</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pagination (static example) -->
+            <nav aria-label="News pagination" class="mt-4">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- Sidebar -->
+          <aside class="col-lg-4 sidebar" aria-labelledby="sidebar-heading">
+            <h3 id="sidebar-heading" class="mb-3">Explore</h3>
+
+            <!-- Search -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <form role="search" aria-label="Search news">
+                  <label for="search" class="form-label visually-hidden"
+                    >Search articles</label
+                  >
+                  <div class="input-group">
+                    <input
+                      id="search"
+                      class="form-control"
+                      type="search"
+                      placeholder="Search articles..."
+                      aria-label="Search articles"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="submit"
+                      aria-label="Search"
+                    >
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Categories</h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="#" class="btn btn-outline-secondary btn-sm">All</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm"
+                    >Health</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm">Youth</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm"
+                    >Relief</a
+                  >
+                  <a href="#" class="btn btn-outline-secondary btn-sm"
+                    >Education</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent posts -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Recent</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex align-items-start text-decoration-none"
+                    >
+                      <img
+                        src="images/news-thumb1.jpg"
+                        alt=""
+                        class="rounded me-2"
+                        width="64"
+                        height="48"
+                        style="object-fit: cover"
+                      />
+                      <div>
+                        <strong class="d-block"
+                          >Medical Outreach in Enugu</strong
+                        >
+                        <small class="meta">Oct 15, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#"
+                      class="d-flex align-items-start text-decoration-none"
+                    >
+                      <img
+                        src="images/news-thumb2.jpg"
+                        alt=""
+                        class="rounded me-2"
+                        width="64"
+                        height="48"
+                        style="object-fit: cover"
+                      />
+                      <div>
+                        <strong class="d-block"
+                          >Youth Empowerment Workshop</strong
+                        >
+                        <small class="meta">Nov 5, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="d-flex align-items-start text-decoration-none"
+                    >
+                      <img
+                        src="images/news-thumb3.jpg"
+                        alt=""
+                        class="rounded me-2"
+                        width="64"
+                        height="48"
+                        style="object-fit: cover"
+                      />
+                      <div>
+                        <strong class="d-block">Christmas Food Drive</strong>
+                        <small class="meta">Dec 20, 2025</small>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Subscribe</h5>
+                <p class="small text-muted">
+                  Get monthly updates and stories from the field. No spam —
+                  unsubscribe anytime.
+                </p>
+                <form>
+                  <label for="nl-email" class="form-label visually-hidden"
+                    >Email address</label
+                  >
+                  <div class="input-group">
+                    <input
+                      id="nl-email"
+                      type="email"
+                      class="form-control"
+                      placeholder="you@example.com"
+                      aria-label="Email for newsletter"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                      Subscribe
+                    </button>
+                  </div>
+                  <div class="form-text mt-2">
+                    <input type="checkbox" id="consent" />
+                    <label for="consent"
+                      >I agree to receive emails from LOMF.</label
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contact / Press -->
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Press & Inquiries</h5>
+                <p class="small text-muted mb-2">
+                  For media or partnership requests, contact us:
+                </p>
+                <a href="mailto:info@lomf.org" class="d-block">info@lomf.org</a>
+                <a
+                  class="btn btn-outline-primary btn-sm mt-3"
+                  href="contact.html"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Article Modal: Post 1 -->
+    <div
+      class="modal fade"
+      id="postModal1"
+      tabindex="-1"
+      aria-labelledby="postModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 id="postModal1Label" class="modal-title">
+              Successful Medical Outreach in Enugu
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </header>
+          <div class="modal-body">
+            <img
+              src="images/news1.jpg"
+              alt="Medical outreach"
+              class="img-fluid rounded mb-3"
+            />
+            <p class="meta">Oct 15, 2025 • Health</p>
+            <p>
+              <strong>Enugu, Nigeria —</strong> On October 15, our volunteers
+              and partner clinics provided free medical consultations, essential
+              medicines, and health education to more than 400 individuals in
+              need. The outreach included general check-ups, maternal care
+              advice, and distribution of medications. Local community leaders
+              and health professionals collaborated to ensure services reached
+              remote neighborhoods.
+            </p>
+            <p>
+              We want to thank every volunteer and partner for their time and
+              generosity. The outreach also included a short training for
+              community health volunteers to ensure continued care following our
+              visit. Read our full impact summary and photos in the gallery.
+            </p>
+            <p class="small text-muted">
+              Share:
+              <a href="#" aria-label="Share on Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Share on X"><i class="bi bi-x"></i></a>
+              <a href="#" aria-label="Share on WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </p>
+          </div>
+          <footer class="modal-footer">
+            <a href="donate.html" class="btn btn-primary">Support This Work</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Modal: Post 2 -->
+    <div
+      class="modal fade"
+      id="postModal2"
+      tabindex="-1"
+      aria-labelledby="postModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 id="postModal2Label" class="modal-title">
+              Youth Empowerment Workshop: Digital Skills for Success
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </header>
+          <div class="modal-body">
+            <img
+              src="images/news2.jpg"
+              alt="Youth workshop"
+              class="img-fluid rounded mb-3"
+            />
+            <p class="meta">Nov 5, 2025 • Youth</p>
+            <p>
+              Our workshop in Lagos trained 120 young people in basic digital
+              skills, CV writing and entrepreneurship. Local mentors provided
+              practical sessions and participants left with resources and
+              contacts for follow-up mentorship. We are collecting volunteer
+              mentors — <a href="contact.html">get involved</a>.
+            </p>
+          </div>
+          <footer class="modal-footer">
+            <a href="contact.html" class="btn btn-outline-primary">Volunteer</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Modal: Post 3 -->
+    <div
+      class="modal fade"
+      id="postModal3"
+      tabindex="-1"
+      aria-labelledby="postModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h5 id="postModal3Label" class="modal-title">
+              Join Our Annual Christmas Food Drive
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </header>
+          <div class="modal-body">
+            <img
+              src="images/news3.jpg"
+              alt="Food drive"
+              class="img-fluid rounded mb-3"
+            />
+            <p class="meta">Dec 20, 2025 • Relief</p>
+            <p>
+              This year we aim to distribute 1,000 food packs across Abuja and
+              neighboring communities. We welcome volunteers and donations — if
+              you can help with packing or logistics, please
+              <a href="contact.html">get in touch</a>.
+            </p>
+          </div>
+          <footer class="modal-footer">
+            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structured Data: Blog (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Lilian Ogechi Missionary Foundation - News",
+        "url": "https://yourdomain.org/news.html",
+        "description": "Latest news, stories, and updates from Lilian Ogechi Missionary Foundation",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Lilian Ogechi Missionary Foundation",
+          "url": "https://yourdomain.org"
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Successful Medical Outreach in Enugu",
+            "datePublished": "2025-10-15",
+            "author": { "@type": "Person", "name": "LOMF Team" },
+            "url": "https://yourdomain.org/news.html#medical-outreach-enugu"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Youth Empowerment Workshop: Digital Skills for Success",
+            "datePublished": "2025-11-05",
+            "author": { "@type": "Person", "name": "LOMF Team" },
+            "url": "https://yourdomain.org/news.html#youth-workshop-lagos"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>
+          &copy; 2025 Lilian Ogechi Missionary Foundation. All Rights Reserved.
+        </p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Notes:
+       - Replace image placeholders under /images with your real photos.
+       - For production, replace modal "read more" with separate post pages (SEO-friendly URLs).
+       - Wire the search, categories, and pagination to your CMS or server-side logic.
+       - Update JSON-LD URLs to match your actual domain.
+  --></body>
+</html>

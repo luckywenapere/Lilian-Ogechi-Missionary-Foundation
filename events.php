@@ -1,9 +1,21 @@
+<?php
+// events.php
+require_once 'includes/config.php';
+require_once 'includes/functions.php';
+
+// Get published events from database
+$events = getEvents('published');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events & Activities | Lilian Ogechi Missionary Foundation</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <meta name="theme-color" content="#0d6efd">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +27,7 @@
       }
       .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-          url("images/events-hero.jpg") center/cover no-repeat;
+          url("assets/images/events-hero.png") center/cover no-repeat;
         color: #fff;
         padding: 100px 0;
         text-align: center;
@@ -48,19 +60,19 @@
 
       /* Responsive Logo */
       .logo {
-        max-height: 50px; /* controls height */
-        width: auto; /* keeps aspect ratio */
+        max-height: 50px;
+        width: auto;
       }
 
       @media (max-width: 768px) {
         .logo {
-          max-height: 40px; /* smaller logo for tablets */
+          max-height: 40px;
         }
       }
 
       @media (max-width: 576px) {
         .logo {
-          max-height: 30px; /* smaller logo for mobile */
+          max-height: 30px;
         }
       }
     </style>
@@ -98,7 +110,7 @@
               <a class="nav-link" href="programs.html">Programs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="events.html">Events</a>
+              <a class="nav-link active" href="events.php">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
@@ -140,64 +152,43 @@
         </div>
 
         <div class="row g-4">
-          <!-- Event Card 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm event-card h-100">
-              <img src="images/event1.jpg" class="card-img-top" alt="Event 1" />
-              <div class="card-body">
-                <h5 class="card-title">Medical Outreach in Enugu</h5>
-                <p class="event-meta">
-                  <i class="bi bi-calendar-event"></i> October 15, 2025 | Enugu,
-                  Nigeria
-                </p>
-                <p class="card-text">
-                  A one-day free medical outreach providing check-ups,
-                  medicines, and health education to underserved communities in
-                  Enugu.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+          <?php if ($events): ?>
+            <?php foreach ($events as $event): ?>
+            <div class="col-md-6 col-lg-4" id="event-<?php echo $event['id']; ?>">
+              <div class="card shadow-sm event-card h-100">
+                <?php if ($event['featured_image']): ?>
+                  <img src="uploads/events/<?php echo $event['featured_image']; ?>" 
+                       class="card-img-top" 
+                       alt="<?php echo $event['title']; ?>">
+                <?php else: ?>
+                  <img src="assets/images/event-placeholder.jpg" 
+                       class="card-img-top" 
+                       alt="Event placeholder">
+                <?php endif; ?>
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $event['title']; ?></h5>
+                  <p class="event-meta">
+                    <i class="bi bi-calendar-event"></i> 
+                    <?php echo $event['event_date'] ? formatEventDate($event['event_date']) : 'Date TBA'; ?> 
+                    <?php if ($event['event_location']): ?>
+                    | <?php echo $event['event_location']; ?>
+                    <?php endif; ?>
+                  </p>
+                  <p class="card-text"><?php echo $event['description']; ?></p>
+                  <?php if ($event['content_body']): ?>
+                    <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+                  <?php endif; ?>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- Event Card 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm event-card h-100">
-              <img src="images/event2.jpg" class="card-img-top" alt="Event 2" />
-              <div class="card-body">
-                <h5 class="card-title">Youth Empowerment Workshop</h5>
-                <p class="event-meta">
-                  <i class="bi bi-calendar-event"></i> November 5, 2025 | Lagos,
-                  Nigeria
-                </p>
-                <p class="card-text">
-                  A workshop focused on equipping youths with skills in
-                  leadership, digital literacy, and entrepreneurship for a
-                  brighter future.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-              </div>
+            <?php endforeach; ?>
+          <?php else: ?>
+            <div class="col-12 text-center py-5">
+              <i class="bi bi-calendar-x" style="font-size: 4rem; color: #6c757d;"></i>
+              <h4 class="mt-3">No Upcoming Events</h4>
+              <p class="text-muted">Check back later for upcoming events and activities.</p>
             </div>
-          </div>
-
-          <!-- Event Card 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm event-card h-100">
-              <img src="images/event3.jpg" class="card-img-top" alt="Event 3" />
-              <div class="card-body">
-                <h5 class="card-title">Christmas Food Drive</h5>
-                <p class="event-meta">
-                  <i class="bi bi-calendar-event"></i> December 20, 2025 |
-                  Abuja, Nigeria
-                </p>
-                <p class="card-text">
-                  Join us as we distribute food packs and essential supplies to
-                  families in need during the festive season.
-                </p>
-                <a href="#" class="btn btn-primary btn-sm">Learn More</a>
-              </div>
-            </div>
-          </div>
+          <?php endif; ?>
         </div>
 
         <!-- Call to Action -->

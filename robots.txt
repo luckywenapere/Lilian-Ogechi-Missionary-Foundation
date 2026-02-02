@@ -1,0 +1,19 @@
+# robots.txt for lomf.org.ng
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lomf.org.ng/sitemap.xml
+
+# Block access to certain directories if needed
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /uploads/
+Disallow: /cgi-bin/
+
+# Allow search engines to index images
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Crawl delay (optional - uncomment if needed)
+# Crawl-delay: 1
